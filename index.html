@@ -25,8 +25,14 @@
                 <li><a class="navbar-link" href="index.html">Papers</a></li>
                 <li><a class="navbar-link" href="index.html">My Library</a></li>
                 <li><a class="navbar-link" href="index.html">Account</a></li>
-                <li><a class="navbar-link" href="#"><i class="las la-shopping-cart"></i></a></li>
+                <li id="lg-bag"><a class="navbar-link" href="#"><i class="las la-shopping-cart"></i></a></li>
+                <a href="#" id="close"><i class="las la-times"></i></a>
             </ul>
+        </div>
+
+        <div id="mobile">
+            <a class="navbar-link" href="#"><i class="las la-shopping-cart"></i></a>
+            <i id="bar" class="las la-bars"></i>
         </div>
     </section>
 
@@ -131,7 +137,7 @@
                 </div>
                 <a href="#"><i class="las la-cart-plus cart-btn"></i></a>
             </div>
-            <div class="book">
+            <div class="book remove">
                 <img src="img/books/7.jpg" alt="">
                 <div class="desc">
                     <span>Clare Mackintosh</span>
@@ -147,7 +153,7 @@
                 </div>
                 <a href="#"><i class="las la-cart-plus cart-btn"></i></a>
             </div>
-            <div class="book">
+            <div class="book remove">
                 <img src="img/books/8.jpg" alt="">
                 <div class="desc">
                     <span>Matthew Landis</span>
@@ -221,7 +227,7 @@
         <p>The more you read, the more you score</p>
 
         <div class="book-container">
-            <div class="book">
+            <div class="book remove">
                 <img src="img/books/9.jpg" alt="">
                 <div class="desc">
                     <span>Kamthane, Pearson Publication</span>
@@ -269,11 +275,11 @@
                 </div>
                 <a href="#"><i class="las la-cart-plus cart-btn"></i></a>
             </div>
-            <div class="book">
+            <div class="book mobile-remove">
                 <img src="img/books/12.jpg" alt="">
                 <div class="desc">
                     <span>Joseph Edwards</span>
-                    <h5>Integral Calculus For Beginners</h5>
+                    <h5>Integral Calculus <span class="remove"><h5>For Beginners</h5></span></h5>
                     <div class="star">
                         <i class="las la-star"></i>
                         <i class="las la-star"></i>
@@ -292,7 +298,7 @@
     <section id="newsletter" class="section-p1 section-m1">
         <div class="news-text">
             <h2>Subscribe Our Newsletter For Updates</h2>
-            <p>Get e-mail updates about latest additions and <span>special offers.</span></p>
+            <p>Get e-mail updates about latest additions and <span><strong>special offers.</strong></span></p>
         </div>
         <div class="news-email">
             <input type="text" placeholder="Your e-mail address">
@@ -304,7 +310,7 @@
         <div class="main-foot">
             <div class="col">
                 <h4>Contact</h4>
-                <p><strong>Address:</strong> 32 - Judges Bungalow Road, Bodakdev, Ahmedabad</p>
+                <p><strong>Address:</strong> 32 - Judges Bungalow Road, Bodakdev, <br> Ahmedabad</p>
                 <p><strong>Phone:</strong> (0278)2344 433 /(+91) 9932277744</p>
                 <p><strong>Hours:</strong> 9:00 - 18:00. Mon - Sat</p>
             </div>
@@ -339,8 +345,8 @@
 
     <div class="legal-foot">
         <ul class="legal-list">
-            <li>Terms & Conditions</li>
-            <li>Privacy Policy</li>
+            <li><span>Terms & Conditions</span></li>
+            <li><span>Privacy Policy</span></li>
             <li>© 2022, OneLib Initiative by Code Ninja</li>
         </ul>
     </div>
