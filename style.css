@@ -44,7 +44,7 @@ p {
 }
 
 button.normal {
-    font-size: 14px;
+    font-size: 17px;
     font-weight: 600;
     padding: 5px 30px;
     color: black;
@@ -337,9 +337,9 @@ body {
     transition: 0.2s ease;
 }
 
-#product1 .book .desc h5:hover {
+/* #product1 .book .desc h5:hover {
     font-size: 21px;
-}
+} */
 
 #product1 .book .desc .star {
     font-size: 14px;
@@ -367,7 +367,7 @@ body {
 }
 
 #product1 .book .cart-btn:hover {
-    font-size: 37px;
+    /* font-size: 37px; */
     color: #2155CD;
 }
 
@@ -803,6 +803,10 @@ div .legal-list li:nth-last-child(2) {
 
 /* -----------------------------media query 2---------------------------------------------- */
 @media (max-width: 477px){
+
+    button.normal {
+        font-size: 13px;
+    }
 
     .section-p1 {
         padding: 3px 0px;
