@@ -46,7 +46,7 @@ p {
 button.normal {
     font-size: 14px;
     font-weight: 600;
-    padding: 10px 30px;
+    padding: 5px 30px;
     color: black;
     background-color: white;
     border-radius: 4px;
@@ -65,13 +65,18 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 5px 30px;
-    background: #E8F9FD;
+    padding: 10px 50px;
+    background: white;
     box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.04);
     z-index: 999;
     position: sticky;
     top: 0;
     left: 0;
+    transition: 0.5s ease;
+}
+
+#header .top-logo{
+    width: 70px;
 }
 
 #navbar {
@@ -79,6 +84,10 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+#navbar-right{
+    float: right;
 }
 
 #navbar li {
@@ -89,19 +98,20 @@ body {
     position: relative;
 }
 
-#navbar li a {
+#navbar .navbar-link {
+    font-size: 20px;
     color: #0AA1DD;
     text-decoration: none;
-    transition: 0.3s ease;
+    transition: 0.2s ease;
 }
 
-#navbar li a:hover,
-#navbar li a.active {
+#navbar .navbar-link:hover,
+#navbar .navbar-link.active {
     color: #2155CD;
 }
 
-#navbar li a.active::after,
-#navbar li a:hover::after {
+#navbar .navbar-link.active::after,
+#navbar .navbar-link:hover::after {
     content: "";
     width: 30%;
     height: 3px;
@@ -109,6 +119,7 @@ body {
     position: absolute;
     bottom: -4px;
     left: 20px;
+    transition: 0.2s ease;
 }
 
 .la-shopping-cart {
@@ -169,13 +180,13 @@ body {
     padding: 5px 10px;
     border-radius: 6px;
     text-decoration: none;
-    border: 3px solid #0AA1DD;
+    border: 2px solid #0AA1DD;
     transition: 0.2s ease;
 }
 
 #monthPopular a:hover {
-    color: #2155CD;
-    border: 3px solid #2155CD;
+    color: white;
+    background-color: #0AA1DD;
 }
 
 /* ----------------------features section -------------------------------- */
@@ -450,7 +461,7 @@ body {
 
 /* -----------------------------------------------footer------------------------------------------------- */
 
-footer{
+footer {
     padding: 0 60px;
     display: flex;
     flex-direction: column;
@@ -517,11 +528,11 @@ footer .social-foot {
     text-align: center;
 }
 
-footer .social-foot i{
+footer .social-foot i {
     cursor: pointer;
 }
 
-.legal-foot {    
+.legal-foot {
     background-color: #E8F9FD;
 }
 
