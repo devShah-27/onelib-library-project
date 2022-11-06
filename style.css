@@ -704,14 +704,6 @@ div .legal-list li:nth-last-child(2) {
         display: none;
     }
 
-    #product1 .book .desc h5:hover {
-        font-size: 15px;
-    }
-
-    #product1 .book .desc h5:active {
-        font-size: 14px;
-    }
-
     #product1 .book-container {
         padding-top: 20px;
         border-radius: 10px;
