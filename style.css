@@ -1049,4 +1049,8 @@ div .legal-list li:nth-last-child(2) {
         padding: 10px 10px;
         font-size: 7px;
     }
+
+    .book-container .book #firstBookName{
+        font-size: 12px;
+    }
 }
