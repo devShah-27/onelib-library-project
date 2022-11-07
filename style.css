@@ -210,16 +210,53 @@ body {
     margin-bottom: 50px;
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-between;
     flex-wrap: wrap;
-    padding-top: 0px;
+}
+
+#main-popcat .popcat {
+    width: 30%;
 }
 
 #main-popcat .popcat-box {
     display: flex;
-    align-items: center;
+    width: 70%;
+    align-items: flex-start;
     justify-content: space-evenly;
     flex-wrap: wrap;
+}
+
+#main-popcat .popcat-box .category-names {
+    display: flex;
+    text-align: center;
+}
+
+#main-popcat .popcat-box .category-names li {
+    padding-top: 8px;
+    margin: 0px 5px;
+    border: 2px solid #E8F9FD;
+    border-radius: 15px;
+    list-style: none;
+    text-align: center;
+    transition: 0.2s ease;
+}
+
+#main-popcat .popcat-box .category-names li:hover {
+    background-color: #E8F9FD;
+}
+
+#main-popcat .popcat-box .category-names li a {
+    text-decoration: none;
+}
+
+#main-popcat .popcat-box .category-names li h2 {
+    color: #0AA1DD;
+    font-weight: 500;
+    font-size: 25px;
+}
+
+#main-popcat .popcat-box .category-names li img {
+    width: 50%;
 }
 
 #main-popcat .popcat h1 {
@@ -227,46 +264,6 @@ body {
     margin-right: 20px;
     font-size: 70px;
 }
-
-#main-popcat h5 {
-    font-size: 20px;
-    font-weight: 500;
-    /* margin-top: 10px; */
-    /* margin-bottom: -5px; */
-}
-
-#main-popcat .ft-box img {
-    width: 95%;
-    margin-bottom: 10px;
-}
-
-#main-popcat .ft-box {
-    cursor: pointer;
-    width: 150px;
-    height: 150px;
-    text-align: center;
-    padding: 25px 15px;
-    box-shadow: 20px 20px 34px rgba(0, 0, 0, 0.04);
-    border: 1px solid #0AA1DD;
-    border-radius: 15px;
-    margin: 20px 45px;
-}
-
-#main-popcat .ft-box:hover {
-    box-shadow: 10px 10px 54px rgba(0, 0, 0, 0.09);
-}
-
-#main-popcat .ft-box h5 {
-    padding: 8px 8px 6px 8px;
-    line-height: 1;
-    border-radius: 3px;
-    color: #0AA1DD;
-}
-
-#main-popcat .popcat-box a {
-    text-decoration: none;
-}
-
 
 /* ------------------------------------ new arrivals -------------------------------- */
 #product1 {
@@ -680,30 +677,40 @@ div .legal-list li:nth-last-child(2) {
     }
 
     #main-popcat {
-        margin-top: 30px;
-        justify-content: center;
-    }
-
-    #main-popcat .ft-box {
-        cursor: pointer;
+        margin: 0px 0px;
         display: flex;
         flex-direction: column;
         align-items: center;
-        width: 102px;
-        height: 100px;
-        text-align: center;
-        padding: 16px 8px;
-        /* box-shadow: 20px 20px 34px rgba(0, 0, 0, 0.04); */
-        border: 1px solid #0AA1DD;
-        border-radius: 15px;
-        margin: 20px 45px;
+        justify-content: space-between;
+        flex-wrap: wrap;
     }
 
     #main-popcat .popcat h1 {
-        display: inline-block;
-        color: #2155CD;
-        margin-right: 20px;
-        font-size: 40px;
+        font-size: 70px;
+        margin-bottom: 30px;
+    }
+
+    #main-popcat .popcat {
+        text-align: center;
+        width: 50%;
+    }
+
+    #main-popcat .popcat-box {
+        width: 70%;
+    }
+
+    .popcatSec {
+        padding: 0px 0px;
+        padding-top: 30px;
+    }
+
+    #main-popcat .popcat-box {
+        margin-top: 20px;
+        width: 90%;
+    }
+
+    #main-popcat .popcat h1 {
+        margin-right: 0;
     }
 
     #product1 .book {
@@ -930,44 +937,29 @@ div .legal-list li:nth-last-child(2) {
         font-size: 13px;
     }
 
-    #main-popcat {
-        margin-top: 20px;
-        margin-bottom: 20px;
+    #main-popcat .popcat-box {
+        margin-top: 10px;
+        width: 95%;
     }
 
-    #main-popcat .ft-box {
-        cursor: pointer;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 83px;
-        height: 83px;
-        text-align: center;
-        padding: 16px 8px;
-        /* box-shadow: 20px 20px 34px rgba(0, 0, 0, 0.04); */
-        border: 1px solid #0AA1DD;
-        border-radius: 12px;
-        margin: 20px 25px;
-        margin-top: 40px;
-    }
-
-    #main-popcat .ft-box img {
-        margin-bottom: 8px;
-    }
-
-    #main-popcat .ft-box h5 {
-        padding: 0px 8px 6px 8px;
-        border-radius: 3px;
+    #main-popcat .popcat {
+        width: 100%;
     }
 
     #main-popcat .popcat h1 {
-        margin-right: 2px;
-        font-size: 33px;
+        font-size: 34px;
+        margin-bottom: 0px;
     }
 
-    #main-popcat h5 {
-        font-size: 15px;
+    #main-popcat .popcat-box .category-names li {
+        border-radius: 11px;
     }
+
+    #main-popcat .popcat-box .category-names li h2 {
+        font-size: 13px;
+        line-height: 20px;
+    }
+
 
     #banner {
         height: 21vh;
@@ -1276,7 +1268,7 @@ div .legal-list li:nth-last-child(2) {
         font-size: 12px;
     }
 
-    #book-category .container .category-name .mobile-remove{
+    #book-category .container .category-name .mobile-remove {
         display: none;
     }
 
