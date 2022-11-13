@@ -62,6 +62,10 @@ body {
     width: 100%;
 }
 
+a {
+    -webkit-tap-highlight-color: transparent;
+}
+
 
 
 /* ------------------------------------------------------homepage--------------------------------------------------- */
@@ -1297,4 +1301,328 @@ div .legal-list li:nth-last-child(2) {
         font-size: 18px;
     }
 
+}
+
+
+/* ----------------------------------------------single product------------------------------------------------- */
+#page3 hr {
+    background: -webkit-gradient(linear, 0 0, 100% 0, from(transparent), to(transparent), color-stop(50%, #0AA1DD));
+    width: 100%;
+    border: none;
+    height: 1px;
+    margin: auto;
+    margin-top: 60px;
+}
+
+#productDetails {
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-around;
+}
+
+#productDetails .productImg {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 35%;
+    height: auto;
+}
+
+#productDetails .productImg img {
+    border-radius: 15px;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.1);
+    transition: 0.2s ease;
+}
+
+#productDetails .productImg img:hover {
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.2);
+}
+
+#productDetails .productDesc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60%;
+    margin-left: 30px;
+}
+
+#productDetails .productDesc .bookHeading {
+    text-align: center;
+}
+
+#productDetails .productDesc h1 {
+    color: #2155CD;
+    font-size: 70px;
+}
+
+#productDetails .productDesc h2 {
+    font-size: 20px;
+    color: #2155CD;
+}
+
+#productDetails .productDesc h4 {
+    color: #222;
+    font-weight: 400;
+    font-size: 20px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+
+#productDetails .productDesc hr {
+    width: 100%;
+    border: none;
+    height: 1px;
+    background: -webkit-gradient(linear, 0 0, 100% 0, from(transparent), to(transparent), color-stop(50%, #0AA1DD));
+}
+
+
+
+.bookDesc {
+    margin-top: 5px;
+    width: 100%;
+}
+
+#productDetails .bookDesc h2 {
+    font-size: 27px;
+}
+
+.fullDesc {
+    font-weight: 300;
+}
+
+.bookDesc .readComDesc {
+    color: #0AA1DD;
+    font-weight: 600;
+}
+
+.bookDesc button {
+    cursor: pointer;
+    font-size: 17px;
+    font-weight: 500;
+    color: white;
+    background-color: #2155CD;
+    border: 1px solid #2155CD;
+    border-radius: 5px;
+    padding: 7px 10px;
+    transition: 0.2s ease;
+    width: 16%;
+}
+
+.bookDesc button i {
+    font-size: 17px;
+}
+
+.bookDesc button:hover {
+    color: #2155CD;
+    background-color: white;
+    border: 1px solid #2155CD;
+}
+
+.bookDesc .readComDesc a {
+    color: #2155CD;
+    text-decoration: none;
+}
+
+.bookDesc .price {
+    color: #0AA1DD;
+    font-size: 25px;
+    font-weight: 700;
+    display: inline-block;
+}
+
+.bookDesc hr {
+    margin-top: 25px;
+}
+
+#buy-now {
+    margin-left: 30px;
+    margin-right: 15px;
+}
+
+#add-to-cart {
+    color: #2155CD;
+    background-color: white;
+}
+
+#add-to-cart:hover {
+    color: white;
+    background-color: #2155CD;
+}
+
+#rentOptions {
+    cursor: pointer;
+    margin-top: 10px;
+    border: 1px solid #0AA1DD;
+    border-radius: 5px;
+    color: #0AA1DD;
+    font-size: 15px;
+    padding: 5px 10px;
+    font-weight: 500;
+    outline: none;
+}
+
+#rentOptions option {
+    cursor: pointer;
+}
+
+#apply-coupon {
+    font-size: 20px;
+    font-weight: 600;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+#coupon {
+    outline: none;
+    font-weight: 300;
+    border: 1px solid #0AA1DD;
+    height: 4.4vh;
+    border-radius: 5px;
+    margin-left: 10px;
+    margin-right: 20px;
+    padding-left: 5px;
+    width: 30%;
+}
+
+#productDetails .productDesc #release-date {
+    color: rgb(79, 79, 79);
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 30px;
+}
+
+#rent-info {
+    margin: 10px 0;
+}
+
+#page3 #product1 {
+    margin-top: 30px;
+}
+
+/* -------------------------------------------media query 1--------------------------------------------------------- */
+@media (max-width: 799px) {
+    #productDetails {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        width: 100%;
+    }
+
+    #productDetails .productImg {
+        max-width: 50%;
+    }
+
+    #productDetails .productDesc h1 {
+        margin-top: 30px;
+    }
+
+    #productDetails .productDesc {
+        margin-left: 0;
+        width: 85%;
+    }
+
+    #page3 #top-hr {
+        margin-top: 5px;
+    }
+
+    #page3 #mid-hr {
+        margin-bottom: 20px;
+    }
+
+    #add-to-cart {
+        width: 22%;
+    }
+
+    #coupon {
+        width: 42%;
+    }
+}
+
+
+/* -------------------------------------------media query 2--------------------------------------------------------- */
+@media (max-width: 477px) {
+
+    #productDetails .productDesc {
+        width: 90%;
+    }
+
+    #productDetails .productDesc h1 {
+        font-size: 49px;
+    }
+
+    #productDetails .productImg {
+        max-width: 55%;
+    }
+
+    #productDetails .productDesc h2 {
+        font-size: 14px;
+        line-height: 23px;
+    }
+
+    #productDetails .productDesc h4 {
+        font-size: 12px;
+    }
+
+    #productDetails .productDesc #release-date {
+        font-size: 12px;
+    }
+
+    p {
+        font-size: 13px;
+    }
+
+    .bookDesc button {
+        font-size: 15px;
+        width: 28%;
+    }
+
+    #buy-now {
+        margin-left: 20px;
+        margin-right: 15px;
+    }
+
+    #add-to-cart {
+        width: 37%;
+    }
+
+    .bookDesc .price {
+        font-size: 23px;
+    }
+
+    #page3 #mid-hr {
+        margin-bottom: 20px;
+        margin-top: 30px;
+    }
+
+    #rentOptions {
+        font-size: 12px;
+    }
+
+    #apply-coupon {
+        font-size: 12px;
+    }
+
+    #coupon {
+        height: 3vh;
+        margin-left: 10px;
+        margin-right: 10px;
+        width: 45%;
+    }
+
+    #page3 #product1 {
+        margin-top: 0px;
+    }
+
+    #billing{
+        font-size: 14px;
+        width: 20%;
+        padding-top: 2px;
+        padding-bottom: 2px;
+    }
+
+    #page3 #section-hr{
+        margin-top: 28px;
+    }
 }
